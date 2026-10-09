@@ -395,7 +395,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # Fork: fire-and-forget
 
 Changes below this heading are **not upstream**. They belong to the
-[tonyinwi/barcodebuddy-python](https://github.com/tonyinwi/barcodebuddy-python)
+[worthingtony/barcodebuddy-python](https://github.com/worthingtony/barcodebuddy-python)
 fork, branched from `sitaro/barcodebuddy-python@e76a458` (2.18.2-beta). Upstream's
 own history resumes at the next divider.
 

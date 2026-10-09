@@ -23,8 +23,16 @@ Modern Python-based barcode scanner with Grocy integration for Home Assistant.
 
 1. Add this repository to Home Assistant:
    - Go to **Settings** → **Add-ons** → **Add-on Store** (three dots menu) → **Repositories**
-   - For the fork: `https://github.com/tonyinwi/barcodebuddy-python`
+   - For the fork: `https://github.com/tonyinwi/barcodebuddy-python` (see the note below)
    - For upstream: `https://github.com/sitaro/barcodebuddy-python`
+
+> **Why the fork's URL still says `tonyinwi`:** the repo moved to
+> [worthingtony/barcodebuddy-python](https://github.com/worthingtony/barcodebuddy-python)
+> on 2026-10-09, and GitHub redirects the old address. The house install keeps the old
+> store URL on purpose: Supervisor names an add-on after `sha1(store URL)[:8]`, which gives
+> `c308acc8_barcodebuddy-python` here, so a new URL installs a new add-on and loses its
+> config. Never create or fork a repo called `barcodebuddy-python` under `tonyinwi`, because
+> that kills the redirect. A fresh install elsewhere can use the `worthingtony` URL.
 
 2. Install the **Barcode Buddy Python** add-on
 
