@@ -7,7 +7,7 @@ change: **unknown barcodes auto-create instead of queuing for a UI decision**
 
 **Read first:** [barcodebuddy/CHANGELOG.md](barcodebuddy/CHANGELOG.md) — the fork
 section at the top lists every divergence and why. The design record lives in
-[kitchen-stack](https://github.com/tonyinwi/kitchen-stack), especially
+[kitchen-stack](https://github.com/worthingtony/kitchen-stack), especially
 `barcodebuddy/FORK.md`.
 
 ## Branch discipline
@@ -20,6 +20,16 @@ section at the top lists every divergence and why. The design record lives in
 
 Note the repo is an **HA add-on repository** — app code is at `barcodebuddy/app/`,
 not `app/`.
+
+## Store URL — leave it on `tonyinwi`
+
+The repo lives at `worthingtony/barcodebuddy-python` since 2026-10-09, but the house
+install's add-on store URL stays `https://github.com/tonyinwi/barcodebuddy-python` **on
+purpose**, and GitHub redirects it. Supervisor's slug is `sha1(store URL)[:8]` — that's
+where `c308acc8` comes from — so a new URL is a new add-on with no config and a new
+hostname. **Never create or fork a repo called `barcodebuddy-python` under `tonyinwi`**:
+it kills the redirect, and the store stops updating. A fresh install elsewhere can use the
+`worthingtony` URL.
 
 ## Deploying — the sequence matters
 
