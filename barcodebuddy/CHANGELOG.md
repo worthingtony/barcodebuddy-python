@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.18.2-beta.45
+
+Grocy API key is shown as a password in the add-on settings (kitchen-stack#420).
+
 ## 2.18.2-beta.39
 
 **An unresolved placeholder is filed under "Unknown", not left ungrouped.**
